@@ -10,12 +10,16 @@ An advanced AI-powered symptom checker that leverages machine learning to predic
 
 ## 🌟 Features
 
-- **🖥️ Interactive Web Interface** - Clean, user-friendly Streamlit-based UI
+- **🖥️ Advanced Interactive Interface** - Professional medical consultation UI with multiple modes
 - **🤖 Machine Learning Prediction** - TF-IDF vectorization with Logistic Regression
-- **⚡ Real-time Analysis** - Instant symptom analysis and disease prediction
-- **📋 Comprehensive Recommendations** - Immediate action steps and prescription guidance
-- **📊 Multi-Disease Support** - Trained on 15+ different medical conditions
+- **⚡ Real-time Analysis** - Instant symptom analysis with confidence scoring
+- **📊 Visual Analytics** - Interactive charts and confidence gauges using Plotly
+- **📋 Multi-Mode Operation** - Symptom Checker, Health Education, Emergency Guide, and About sections
+- **🚨 Emergency Detection** - Automatic detection of emergency symptoms with immediate guidance
+- **� User Profiling** - Age, gender, and medical history consideration
+- **📚 Health Education** - Comprehensive disease information and prevention tips
 - **🔒 Privacy-Focused** - No data storage, all processing happens locally
+- **📱 Responsive Design** - Works on desktop, tablet, and mobile devices
 
 ## 🚀 Quick Start
 
@@ -47,6 +51,15 @@ An advanced AI-powered symptom checker that leverages machine learning to predic
    ```bash
    streamlit run app.py
    ```
+   
+   **Or use the convenient startup scripts:**
+   ```bash
+   # Windows Command Prompt
+   run_app.bat
+   
+   # Windows PowerShell
+   .\run_app.ps1
+   ```
 
 5. **Open your browser:**
    Navigate to `http://localhost:8501` to access the application.
@@ -55,11 +68,13 @@ An advanced AI-powered symptom checker that leverages machine learning to predic
 
 ```
 AI-Doctor/
-├── 📄 app.py                 # Main Streamlit application
+├── 📄 app.py                 # Enhanced Streamlit application with multi-mode UI
 ├── 🧠 model.py               # ML model and prediction logic
 ├── 📊 symptoms_data.csv      # Training dataset (15 diseases)
-├── 📋 requirements.txt       # Python dependencies
-├── 🧪 test_app.py           # Application test suite
+├── 📋 requirements.txt       # Python dependencies (including Plotly)
+├── 🧪 test_app.py           # Enhanced application test suite
+├── 🚀 run_app.bat           # Windows batch startup script
+├── 🚀 run_app.ps1           # Windows PowerShell startup script
 ├── 📝 README.md             # Project documentation
 ├── 🚫 .gitignore            # Git ignore rules
 └── 🗂️ .venv/                # Virtual environment
@@ -94,6 +109,32 @@ The AI Doctor can predict the following medical conditions:
 | Arrhythmia | irregular heartbeat, dizziness | Medium |
 
 ## 🎯 Usage Guide
+
+### Application Modes
+
+The enhanced AI Medical Consultant offers four distinct modes:
+
+#### 1. 🩺 Symptom Checker Mode
+- **Primary Interface**: Detailed symptom input with natural language processing
+- **User Profiling**: Age, gender, and medical history consideration
+- **Emergency Detection**: Automatic identification of emergency symptoms
+- **Visual Analysis**: Confidence gauges and interactive result displays
+- **Quick Selection**: Common symptom checkboxes for faster input
+
+#### 2. 📚 Health Education Mode
+- **Disease Database**: Comprehensive information about common conditions
+- **Prevention Tips**: Evidence-based prevention strategies
+- **Symptom Guides**: Detailed symptom descriptions for various conditions
+
+#### 3. 🚨 Emergency Guide Mode
+- **Critical Situations**: Step-by-step emergency response protocols
+- **Warning Signs**: Clear identification of emergency symptoms
+- **Immediate Actions**: Life-saving first aid instructions
+
+#### 4. ℹ️ About Mode
+- **System Information**: Technical details and capabilities
+- **Usage Statistics**: Real-time application metrics
+- **Disclaimer**: Important medical and legal information
 
 ### Basic Usage
 
@@ -142,10 +183,11 @@ Test 1: fever cough fatigue
 
 ### Dependencies
 
-- **streamlit**: Web interface framework
+- **streamlit**: Enhanced web interface framework
 - **pandas**: Data manipulation and analysis
 - **scikit-learn**: Machine learning algorithms
 - **numpy**: Numerical computing
+- **plotly**: Interactive visualizations and charts
 
 ### Model Architecture
 
